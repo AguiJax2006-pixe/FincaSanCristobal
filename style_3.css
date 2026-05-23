@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background-color: #800000;
+}
+
+.fondo-nav {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 16px 30px;
+}
+
+.navbar-brand {
+    color: #f4b400 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f4b400 !important;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 16px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/volcan.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.contenido h4 {
+    letter-spacing: 3px;
+    color: #f4b400;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contenido h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contenido p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.etiqueta {
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #f4b400;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.historia-section {
+    background-color: #6b0000;
+    padding: 80px 0;
+}
+
+.historia-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.historia-img { flex: 1; }
+
+.historia-img img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.historia-texto { flex: 1; }
+
+.historia-texto h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.historia-texto p {
+    color: rgba(255,255,255,0.7);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.historia-texto strong { color: #f4b400; }
+
+.stats-section {
+    background-color: #800000;
+    padding: 60px 40px;
+}
+
+.stats-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #6b0000;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.stat-icono {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.stat-card h3 {
+    color: #f4b400;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.stat-card p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+}
+
+.servicios-section {
+    background-color: #6b0000;
+    padding: 70px 40px;
+}
+
+.servicios-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.servicio-card {
+    background-color: #800000;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.serv-icono {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.servicio-card h5 {
+    color: #f4b400;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.servicio-card p {
+    color: rgba(255,255,255,0.6);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.galeria-section {
+    background-color: #800000;
+    padding: 70px 40px;
+}
+
+.galeria-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.galeria-item {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover img { transform: scale(1.05); }
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    background: #000;
+    color: #555;
+    font-size: 13px;
+}
+
+#whatsapp-burbuja {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  z-index: 9999;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+#whatsapp-burbuja:hover {
+  transform: scale(1.1);
+}
+
+#whatsapp-burbuja img {
+  width: 30px;
+  height: 30px;
+}
+
+@media(max-width: 768px){
+
+    .general{
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #postres{
+        grid-template-columns: repeat(2, 1fr);
+
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .titulo-menu{
+        margin-left: 20px;
+
+        font-size: 24px;
+    }
+
+    .titulo-menu::after{
+        width: 90%;
+    }
+
+    .modal-contenido{
+    width: 90%;
+
+    flex-direction: row;
+
+    padding: 15px;
+}
+
+.info{
+    width: 40%;
+}
+
+.imagen{
+    width: 60%;
+}
+
+.imagen img{
+    height: 300px;
+}
+
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(128, 0, 0, 0.97);
+        padding: 16px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .historia-contenedor {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .historia-img img {
+        height: 300px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .contenido h1 {
+        font-size: 32px;
+    }
+
+    .historia-texto h2 {
+        font-size: 1.6rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo-seccion {
+        font-size: 1.6rem;
+    }
+}

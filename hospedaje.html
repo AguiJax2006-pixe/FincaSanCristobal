@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedaje | Finca San Cristóbal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reservaciones.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fondo-nav">
+        <div class="container-fluid px-4">
+
+            <a class="navbar-brand" href="Index.html">
+                Finca San Cristóbal
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva_restaurante.html">Reservaciones</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="hospedaje.html">Hospedaje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Creadores.html">Creadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h4>Hospedaje</h4>
+            <h1>Finca San Cristóbal</h1>
+            <p>Vive una experiencia única rodeado de naturaleza, comodidad y elegancia.</p>
+        </div>
+    </section>
+
+    <section class="habitaciones">
+        <div class="container">
+
+            <h2 class="titulo">Nuestras Habitaciones</h2>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-habitacion">
+                        <img src="img/foto1.png.jpeg" alt="Habitación Deluxe">
+                        <div class="contenido-card">
+                            <h3>Habitación Deluxe</h3>
+                            <p>Elegancia y comodidad para una experiencia inolvidable.</p>
+                            <button class="btn-reservar"
+                                data-bs-toggle="modal"
+                                data-bs-target="#infoDeluxe">
+                                Más Información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-habitacion">
+                        <img src="img/foto2.png.jpeg" alt="Habitación Familiar">
+                        <div class="contenido-card">
+                            <h3>Habitación Familiar</h3>
+                            <p>Perfecta para compartir momentos especiales en familia.</p>
+                            <button class="btn-reservar"
+                                data-bs-toggle="modal"
+                                data-bs-target="#infoFamiliar">
+                                Más Información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-habitacion">
+                        <img src="img/foto3.png.jpeg" alt="Suite Premium">
+                        <div class="contenido-card">
+                            <h3>Suite Premium</h3>
+                            <p>Una experiencia exclusiva con vistas espectaculares.</p>
+                            <button class="btn-reservar"
+                                data-bs-toggle="modal"
+                                data-bs-target="#infoPremium">
+                                Más Información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="infoDeluxe" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-estilo">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Habitación Deluxe</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/foto1.png.jpeg" class="img-fluid rounded mb-3">
+                    <p>Disfruta de una habitación elegante y acogedora, perfecta para relajarte rodeado de naturaleza.</p>
+                    <h4 class="precio">$95 por noche</h4>
+                    <ul>
+                        <li>✔ 2 camas matrimoniales</li>
+                        <li>✔ 2 baños privados</li>
+                        <li>✔ WiFi gratuito</li>
+                        <li>✔ Balcón con vista natural</li>
+                        <li>✔ Aire acondicionado</li>
+                        <li>✔ Mini refri</li>
+                    </ul>
+                    <button class="btn-confirmar" data-bs-toggle="modal" data-bs-target="#formReserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoFamiliar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-estilo">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Habitación Familiar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/foto2.png.jpeg" class="img-fluid rounded mb-3">
+                    <p>Ideal para familias y grupos que buscan comodidad y tranquilidad en un ambiente natural.</p>
+                    <h4 class="precio">$135 por noche</h4>
+                    <ul>
+                        <li>✔ 3 camas</li>
+                        <li>✔ Mini refri</li>
+                        <li>✔ TV</li>
+                        <li>✔ Terraza privada</li>
+                        <li>✔ WiFi gratuito</li>
+                    </ul>
+                    <button class="btn-confirmar" data-bs-toggle="modal" data-bs-target="#formReserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="infoPremium" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-estilo">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Suite Premium</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/foto3.png.jpeg" class="img-fluid rounded mb-3">
+                    <p>Vive una experiencia exclusiva con lujo, comodidad y vistas espectaculares.</p>
+                    <h4 class="precio">$210 por noche</h4>
+                    <ul>
+                        <li>✔ Cama King</li>
+                        <li>✔ Jacuzzi</li>
+                        <li>✔ Vista panorámica</li>
+                        <li>✔ Minibar</li>
+                        <li>✔ WiFi gratuito</li>
+                    </ul>
+                    <button class="btn-confirmar" data-bs-toggle="modal" data-bs-target="#formReserva">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="formReserva" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-estilo">
+            <div class="modal-header border-0">
+                <h5 class="modal-title">Formulario de Reservación</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="exito-hospedaje" style="display:none; text-align:center; padding: 30px 10px;">
+                    <p style="font-size: 3rem;">✅</p>
+                    <h3 style="color: #f4b400; margin-bottom: 12px;">¡Reservación exitosa!</h3>
+                    <p style="color: #ccc; margin-bottom: 24px;">Nos pondremos en contacto contigo pronto para confirmar tu reservación.</p>
+                    <button class="btn-confirmar" onclick="cerrarYReset()">Volver</button>
+                </div>
+
+                <form id="form-hospedaje">
+                        <div class="row g-2 mb-2">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="tel" class="form-control" placeholder="Teléfono" required>
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-2">
+                            <div class="col-12">
+                                <input type="email" class="form-control" placeholder="Correo electrónico (opcional)">
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-2">
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="DUI / Pasaporte / ID" required>
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-2">
+                            <div class="col-6">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="number" class="form-control" placeholder="Personas" min="1">
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <select class="form-select" required>
+                                    <option value="">Método de pago</option>
+                                    <option>Efectivo</option>
+                                    <option>Tarjeta</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select" required>
+                                    <option value="">¿Cuándo paga?</option>
+                                    <option>Al reservar</option>
+                                    <option>Al llegar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-confirmar">Confirmar Reservación</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Finca San Cristóbal · Todos los derechos reservados</p>
+    </footer>
+
+    <a id="whatsapp-burbuja"
+       href="https://wa.me/50376777373"
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.getElementById('form-hospedaje').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('form-hospedaje').style.display = 'none';
+        document.getElementById('exito-hospedaje').style.display = 'block';
+    });
+
+    function cerrarYReset() {
+        var modal = bootstrap.Modal.getInstance(document.getElementById('formReserva'));
+        modal.hide();
+        setTimeout(function() {
+            document.getElementById('form-hospedaje').style.display = 'block';
+            document.getElementById('exito-hospedaje').style.display = 'none';
+            document.getElementById('form-hospedaje').reset();
+        }, 400);
+    }
+</script>
+
+</body>
+
+</html>
